@@ -1,7 +1,8 @@
-///vite.config.js
 import { defineConfig } from "vite";
+
 export default defineConfig({
+  root: "./src", // Cambia la raíz del proyecto a "src"
   build: {
-    outDir: "docs", // Cambia la carpeta de salida a "docs"
+    outDir: "../docs", // Los archivos construidos irán a la carpeta "docs"
   },
 });
