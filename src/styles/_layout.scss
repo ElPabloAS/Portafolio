@@ -1,0 +1,26 @@
+// Elimina la siguiente línea para evitar el bucle de módulos
+// @use "globals" as *;
+
+// Elimina la siguiente línea para evitar la duplicación de variables
+// @import 'variables';
+
+// Elimina la siguiente línea para evitar la duplicación de mixins
+// @import 'mixins';
+
+// Estilo de letra global y fondo
+@use "variables" as *;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-jesey;
+}
+
+p{
+  font-family: $font-text;
+}
+.container {
+  max-width: 1700px;
+  margin: 0 auto; // Centrar contenido
+  padding: 0 1rem; // Espaciado interno lateral
+}

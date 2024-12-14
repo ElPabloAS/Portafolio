@@ -1,0 +1,108 @@
+@use "variables" as *;
+
+
+
+header {
+  position: relative;
+  background-image: url(../assets/img/image.png);
+  background-size: 100vw;
+  height: 100vh; // Ocupa todo el alto de la pantalla
+  background-color: $background-color-header; // Negro medio transparente
+  background-blend-mode: darken; // Mezcla el color de fondo con la imagen
+}
+
+
+.navbar {
+  font-family: $font-jesey;
+  font-size: 2rem; 
+  width: 100%;
+  color: $text-white; 
+  letter-spacing: $letter-spacing;
+}
+
+.nav{
+  padding-top: $padding-top-navbar;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  padding-top: $padding-top-navbar;
+  display: flex;
+  justify-content: space-between;
+
+  & > * {
+    padding-left: 3.5rem;
+  }
+}
+
+.presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; // Ocupa todo el alto de la pantalla
+  text-align: center;
+  color: $text-white; // Color blanco
+  font-family: $font-jesey; // Fuente Jersey 10
+  letter-spacing: $letter-spacing;
+}
+
+.img {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.avatar {
+  width: 20rem;
+  border-radius: 2000px;
+}
+
+.sobre-mi {
+  display: flex;
+  flex-direction: row; // Cambiar a disposición horizontal
+  align-items: stretch; // Asegurar que todas las tarjetas se estiren a la misma altura
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap; // Permitir que las tarjetas se envuelvan si es necesario
+}
+
+.yo{
+font-size: 50px;
+}
+
+.sobre-mi .card {
+  background-color: $background-color-card; // Añadir color de fondo para la tarjeta
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 2rem;
+  width: 300px; // Asegurar que todas las tarjetas tengan el mismo ancho
+  text-align: center;
+  color: $text-color-card; // Añadir color de texto para la tarjeta
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; // Asegurar que todas las tarjetas tengan la misma altura
+}
+
+.sobre-mi .card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.sobre-mi .card p:last-child {
+  margin-bottom: 20rem; // Eliminar margen inferior del último párrafo
+}
+
+.txt-center{
+  text-align: center;
+}
